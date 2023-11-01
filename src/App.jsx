@@ -9,7 +9,7 @@ const App = () => {
 
   const handleEqual = () => {
     try {
-      const evaluatedRes=eval(result)
+      const evaluatedRes = eval(result)
       setResult(evaluatedRes.toString())
     } catch (error) {
       setResult('Syntax Error')
@@ -17,8 +17,8 @@ const App = () => {
   }
 
   return (
-    <div >
-      <section className=' bg-black my-0 mx-auto w-[350px] h-[650px] rounded-xl lg:my-10'>
+    <div className=' bg-black lg:bg-[#f7fee7]'>
+      <section className=' bg-black my-0 mx-auto rounded-xl lg:my-10 w-[350px] h-[650px]'>
         <div className='w-full h-1/4 hidden:border border-gray-50 text-white p-5 pb-0 flex justify-end' >
           <span className='mt-auto text-3xl'>{result}</span>
         </div>
@@ -43,7 +43,7 @@ const App = () => {
             <button onClick={() => { setResult(result + '00') }} className='number'>00</button>
             <button onClick={() => { setResult(result + 0) }} className='number'>0</button>
             <button onClick={() => { setResult(result + '.') }} className='number'>.</button>
-            <button onClick={ handleEqual } className='equal'>=</button>
+            <button onClick={handleEqual} className='equal'>=</button>
           </div>
         </div>
       </section>
