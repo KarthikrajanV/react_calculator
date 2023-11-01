@@ -18,7 +18,7 @@ const App = () => {
 
   return (
     <div >
-      <section className=' bg-black my-12 mx-auto w-[350px] h-[650px] rounded-xl'>
+      <section className=' bg-black my-0 mx-auto w-[350px] h-[650px] rounded-xl lg:my-10'>
         <div className='w-full h-1/4 hidden:border border-gray-50 text-white p-5 pb-0 flex justify-end' >
           <span className='mt-auto text-3xl'>{result}</span>
         </div>
