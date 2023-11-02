@@ -13,11 +13,11 @@ body {
 }
 
 .number {
-  @apply w-14 h-14 rounded-full bg-[#131313] font-bold text-xl text-white text-center hover:bg-[#272727]
+  @apply w-14 h-14 rounded-full bg-[#131313] font-bold text-xl text-white text-center hover:bg-[#272727] shadow-2xl
 }
 
 .operator {
-  @apply w-14 h-14 rounded-full bg-[#272727] font-bold text-xl text-white text-center hover:bg-[#313131]
+  @apply w-14 h-14 rounded-full bg-[#272727] font-bold text-xl text-white text-center hover:bg-[#313131] shadow-2xl
 }
 
 .equal {

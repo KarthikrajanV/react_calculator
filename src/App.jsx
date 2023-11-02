@@ -17,13 +17,13 @@ const App = () => {
   }
 
   return (
-    <div className=' bg-black lg:bg-[#f7fee7]'>
-      <section className=' bg-black my-0 mx-auto rounded-xl lg:my-10 w-[350px] h-[650px]'>
+    <div className=' bg-black min-h-screen lg:bg-[#f7fee7]'>
+      <section className=' bg-black my-0 mx-auto rounded-xl lg:my-12 w-[350px] h-[650px]'>
         <div className='w-full h-1/4 hidden:border border-gray-50 text-white p-5 pb-0 flex justify-end' >
           <span className='mt-auto text-3xl'>{result}</span>
         </div>
         <div className='hidden:border border-red-400 m-3 mt-16'>
-          <div className='grid grid-cols-4  ml-2 gap-5 ' >
+          <div className='grid grid-cols-4  ml-2 gap-5 gap-y-7' >
             <button onClick={() => { setResult('') }} className='operator'>C</button>
             <button onClick={() => { setResult(result + '%') }} className='operator'>%</button>
             <button onClick={() => { setResult(result.substring(0, result.length - 1)) }} className='operator'><FontAwesomeIcon icon={faDeleteLeft} /></button>
